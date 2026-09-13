@@ -18,11 +18,16 @@ const Hero = () => {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-3">
-              <button className="btn border-0 text-white bg-linear-to-r from-violet-600 to-blue-500">
+              <a
+                href="#technologies"
+                className="btn border-0 text-white bg-linear-to-r from-violet-600 to-blue-500"
+              >
                 Explore Technologies
-              </button>
+              </a>
 
-              <button className="btn btn-outline">View My Stack</button>
+              <a href="#my-stack" className="btn btn-outline">
+                View My Stack
+              </a>
             </div>
           </div>
 

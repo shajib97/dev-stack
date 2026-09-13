@@ -23,7 +23,7 @@ const TechnologyList = ({ handleAddToStack }) => {
   }
 
   return (
-    <div>
+    <div id="technologies" className="space-y-8">
       <div className="mb-8">
         <h2 className="text-3xl md:text-4xl font-bold">Explore Technologies</h2>
 

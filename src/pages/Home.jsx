@@ -49,7 +49,7 @@ const Home = () => {
             <TechnologyList handleAddToStack={handleAddToStack} />
           </div>
 
-          <div className="w-full lg:w-72 lg:sticky lg:top-6">
+          <div id="my-stack" className="w-full lg:w-72 lg:sticky lg:top-6">
             <Stack
               stack={stack}
               handleRemove={handleRemove}
