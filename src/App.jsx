@@ -1,15 +1,7 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import TechnologyList from "./components/TechnologyList";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <TechnologyList />
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
