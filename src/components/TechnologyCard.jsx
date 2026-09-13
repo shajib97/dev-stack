@@ -6,6 +6,7 @@ import {
   FaVuejs,
   FaStar,
 } from "react-icons/fa";
+
 import {
   SiJavascript,
   SiSvelte,
@@ -16,7 +17,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 
-const TechnologyCard = ({ technology, handleAddToStack }) => {
+const TechnologyCard = ({ technology, handleAddToStack, stack }) => {
   const { name, category, difficulty, rating, description, icon, badge } =
     technology;
 
@@ -26,7 +27,6 @@ const TechnologyCard = ({ technology, handleAddToStack }) => {
     FaJava: <FaJava />,
     FaDocker: <FaDocker />,
     FaVuejs: <FaVuejs />,
-    FaStar: <FaStar />,
     SiJavascript: <SiJavascript />,
     SiSvelte: <SiSvelte />,
     SiNextdotjs: <SiNextdotjs />,
@@ -35,6 +35,8 @@ const TechnologyCard = ({ technology, handleAddToStack }) => {
     SiTypescript: <SiTypescript />,
     SiTailwindcss: <SiTailwindcss />,
   };
+
+  const isAdded = stack.some((item) => item.id === technology.id);
 
   return (
     <div className="card bg-base-100 border border-base-300 shadow-sm hover:shadow-md transition duration-300 rounded-2xl">
@@ -52,9 +54,13 @@ const TechnologyCard = ({ technology, handleAddToStack }) => {
         </div>
 
         <div className="flex justify-between items-center mt-5">
-          <span className="badge badge-secondary badge-outline">
-            {difficulty}
-          </span>
+          <div className="flex gap-2">
+            <span className="badge badge-outline">{category}</span>
+
+            <span className="badge badge-secondary badge-outline">
+              {difficulty}
+            </span>
+          </div>
 
           <div className="flex items-center gap-1 text-sm">
             <FaStar className="text-yellow-500" />
@@ -64,9 +70,10 @@ const TechnologyCard = ({ technology, handleAddToStack }) => {
 
         <button
           onClick={() => handleAddToStack(technology)}
+          disabled={isAdded}
           className="btn btn-primary w-full mt-5 rounded-xl"
         >
-          Add to Stack
+          {isAdded ? "Added to Stack" : "Add to Stack"}
         </button>
       </div>
     </div>

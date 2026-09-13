@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TechnologyCard from "./TechnologyCard";
 
-const TechnologyList = ({ handleAddToStack }) => {
+const TechnologyList = ({ handleAddToStack,stack }) => {
   const [technologies, setTechnologies] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -38,6 +38,7 @@ const TechnologyList = ({ handleAddToStack }) => {
             key={technology.id}
             technology={technology}
             handleAddToStack={handleAddToStack}
+            stack={stack}
           />
         ))}
       </div>

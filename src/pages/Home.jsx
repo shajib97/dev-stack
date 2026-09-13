@@ -46,7 +46,9 @@ const Home = () => {
       <main className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           <div className="w-full lg:flex-1">
-            <TechnologyList handleAddToStack={handleAddToStack} />
+            <TechnologyList handleAddToStack={handleAddToStack}
+            stack={stack} 
+            />
           </div>
 
           <div id="my-stack" className="w-full lg:w-72 lg:sticky lg:top-6">
