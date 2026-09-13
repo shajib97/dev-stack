@@ -25,7 +25,7 @@ const TechnologyList = ({ handleAddToStack,stack }) => {
   return (
     <div id="technologies" className="space-y-8">
       <div className="mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold">Explore Technologies</h2>
+        <h2 className="text-3xl md:text-4xl font-bold">Explore the <span className="brand-gradient-text">Technologies</span></h2>
 
         <p className="text-gray-500 mt-2">
           Discover popular technologies and build your development stack.

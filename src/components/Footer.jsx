@@ -21,10 +21,10 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+      
           <div>
             <h3 className="font-bold text-lg mb-4">
-              Quick Links
+              PRODUCT
             </h3>
 
             <ul className="space-y-2 text-gray-500">
@@ -42,55 +42,55 @@ const Footer = () => {
 
               <li>
                 <a className="hover:text-primary cursor-pointer">
-                  My Stack
+                  projects
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Resources */}
+          
           <div>
             <h3 className="font-bold text-lg mb-4">
-              Resources
+              COMPANY
             </h3>
 
             <ul className="space-y-2 text-gray-500">
               <li>
                 <a className="hover:text-primary cursor-pointer">
-                  Documentation
+                  About
                 </a>
               </li>
 
               <li>
                 <a className="hover:text-primary cursor-pointer">
-                  Community
+                  Contact
                 </a>
               </li>
 
               <li>
                 <a className="hover:text-primary cursor-pointer">
-                  Support
+                  Careers
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Account */}
+    
           <div>
             <h3 className="font-bold text-lg mb-4">
-              Account
+              LEGAL
             </h3>
 
             <ul className="space-y-2 text-gray-500">
               <li>
                 <a className="hover:text-primary cursor-pointer">
-                  Sign In
+                  Privacy Policy
                 </a>
               </li>
 
               <li>
                 <a className="hover:text-primary cursor-pointer">
-                  Sign Up
+                  Terms of Service
                 </a>
               </li>
             </ul>

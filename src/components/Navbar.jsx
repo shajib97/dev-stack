@@ -15,7 +15,7 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1 gap-2">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#home" className="text-pink-500 font-medium">Home</a></li>
           <li><a href="#technologies">Technologies</a></li>
           <li><a href="#my-stack">My Stack</a></li>
         </ul>
@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Desktop Buttons */}
       <div className="navbar-end hidden md:flex gap-2">
         <button className="btn btn-ghost">Sign In</button>
-        <button className="btn btn-primary">Sign Up</button>
+        <button className="btn brand-gradient-bg border-0 text-white rounded-full px-6">Sign Up</button>
       </div>
 
       {/* Mobile Menu */}
