@@ -9,7 +9,9 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Build Your Perfect
-              <span className="block text-primary">Development Stack</span>
+              <span className="block text-primary"><span className="brand-gradient-text">
+  Development Stack
+</span></span>
             </h1>
 
             <p className="mt-6 text-base md:text-lg text-gray-500 max-w-xl mx-auto lg:mx-0">
@@ -20,7 +22,7 @@ const Hero = () => {
             <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-3">
               <a
                 href="#technologies"
-                className="btn border-0 text-white bg-linear-to-r from-violet-600 to-blue-500"
+                className="btn brand-gradient-bg border-0 text-white"
               >
                 Explore Technologies
               </a>
